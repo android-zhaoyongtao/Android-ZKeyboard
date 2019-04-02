@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="light_grey">#E8E8E8</color>
+    <color name="pager_color">#ff5e41</color>
+    <color name="blue">#ff33b5e5</color>
+    <color name="grey">#999999</color>
+    <color name="dark_grey">#ff4c4c4c</color>
+    <color name="black">#333333</color>
+    <color name="color_divider">#1A000000</color>
+
+</resources>

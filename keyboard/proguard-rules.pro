@@ -1,0 +1,10 @@
+-keep class **Bean {*;}
+-keep class **.bean.** {*;}
+-keep class **Dao {*;}
+-keep class **.dao.** {*;}
+-keep class **Model {*;}
+-keep class **.modle.** {*;}
+-keep class **Entity {*;}
+-keepclassmembers class * {public <init> (org.json.JSONObject);}
+-keep public class [com.zyt.keyboard].R$*{public static final int *;}
+-keep class android.support.design.widget.TabLayout$TabView{*;}

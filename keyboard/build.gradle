@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+buildscript {
+//    repositories {
+//        mavenCentral()
+//    }
+}
+
+repositories {
+    google()
+    jcenter()
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0.0"
+    }
+    signingConfigs {
+        release {
+            keyAlias 'keystore'
+            keyPassword '123456789xyz'
+            storeFile file('/Users/zhaoyongtao/develop/personal key store/keystore')
+            storePassword '123456789xyz'
+        }
+    }
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
+            debuggable false
+            minifyEnabled false
+            shrinkResources false
+        }
+        debug {
+            debuggable true
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.umeng.analytics:analytics:latest.integration'//umeng
+}

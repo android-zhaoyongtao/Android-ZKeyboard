@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_btn"
+        android:gravity="center"
+        android:text="清空最近词条"
+        android:textColor="@color/dark_grey"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/button01"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_btn"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:text="测试竖向"
+        android:textColor="@color/dark_grey"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/button02"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_btn"
+        android:gravity="center"
+        android:text="测试横向"
+        android:textColor="@color/dark_grey"
+        android:textSize="15sp"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="点击按钮即发送"
+        android:textColor="@color/dark_grey"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_margin="10dp"
+        android:background="@color/color_divider"/>
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="点击后换行"
+        android:textColor="@color/dark_grey"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_margin="10dp"
+        android:background="@color/color_divider"/>
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="键盘标题可滑动"
+        android:textColor="@color/dark_grey"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_margin="10dp"
+        android:background="@color/color_divider"/>
+
+    <TextView
+        android:id="@+id/buttonAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="关于我们"
+        android:textColor="@color/blue"
+        android:textSize="15sp"/>
+</LinearLayout>
